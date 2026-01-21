@@ -1,4 +1,21 @@
 body {
-  font-family: sans-serif;
-  background-color: #f0f0f0;
+  font-family: serif;
+  background-color: #eefeff;
+  text-align: center;
+  overflow: auto;
+}
+
+.bg-text {
+  position: fixed;      /* 画面に固定 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-size: 100px;     /* でかさ */
+  font-weight: bold;
+  color: #000;
+  opacity: 0.05;        /* 薄くする */
+  
+  z-index: -1;          /* 背景に回す */
+  pointer-events: none;/* クリック無効 */
 }
